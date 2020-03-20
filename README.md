@@ -1,4 +1,7 @@
+
+
 # IssueHighlighter
+[Releases](/releases)
 
 IssueHighlighter is a BurpSuite extension that automatically highlights responses indicative of vulnerabilities or general issues in the history tab. The extension includes a growing list of configurable scan tools. See Tools list below. For example, IssueHighlighter includes a "Click Jacking" scan tool that looks for requests missing the "X-Frame-Options" header and highlights the response in the history tab. Note that this tool Highlight's responses that MIGHT indicate an issue, for example using "X-Frame-Options" headers is not the only way to prevent click jacking.
 
