@@ -1,4 +1,4 @@
-package burp.issuehighlighter;
+package issuehighlighter;
 
 import java.util.Vector;
 import javax.swing.ComboBoxModel;

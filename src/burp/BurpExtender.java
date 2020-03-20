@@ -1,10 +1,10 @@
 package burp;
 
-import burp.issuehighlighter.ClickJackScanner;
-import burp.issuehighlighter.ColorEnum;
-import burp.issuehighlighter.CustomComboBox;
-import burp.issuehighlighter.ScanToolI;
-import burp.issuehighlighter.UserAgentReflection;
+import issuehighlighter.ClickJackScanner;
+import issuehighlighter.ColorEnum;
+import issuehighlighter.CustomComboBox;
+import issuehighlighter.ScanToolI;
+import issuehighlighter.UserAgentReflection;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
@@ -102,13 +102,12 @@ public class BurpExtender implements IBurpExtender, IExtensionStateListener, IPr
 
   private void loadTools() {
     ClickJackScanner clickJackScanner = new ClickJackScanner(callbacks, helpers, stdout, stderr);
-    //TestTool testTool = new TestTool(callbacks, helpers, stdout, stderr);
     UserAgentReflection userAgentReflection = new UserAgentReflection(callbacks, helpers, stdout,
         stderr);
 
     scanTools.add(clickJackScanner);
     scanTools.add(userAgentReflection);
-    //scanTools.add(testTool);
+
     callbacks.saveExtensionSetting("init_load", "false");
 
   }
