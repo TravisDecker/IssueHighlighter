@@ -147,6 +147,6 @@ public class BurpExtender implements IBurpExtender, IExtensionStateListener, IPr
 
   @Override
   public void extensionUnloaded() {
-
+      stdout.println("Extension Unloaded")
   }
 }
